@@ -29,29 +29,33 @@
         <p>Project Mbappe</p>
         <br>
     </div>
-    <br>
-    <p id="systeminfo"></p>
     <hr>
+    <div id="systeminfo">
+        <?php
+        error_reporting(E_ALL);
+        ini_set('display_errors', 1);
 
-    <script>
-        setInterval(function () {
-            let xhr = new XMLHttpRequest();
-            xhr.open('GET', 'PHP/sysinfo.php', true);
-            xhr.onload = function () {
-                if (xhr.readyState == 4) {
-                    if (xhr.status == 200) {
-                        document.getElementById('systeminfo').textContent = xhr.responseText;
-                    } else {
-                        console.error('Error:', xhr.statusText);
-                    }
-                }
-            };
-            xhr.onerror = function () {
-                console.error('Request failed');
-            };
-            xhr.send();
-        }, 1000);
-    </script>
+        $output = shell_exec('landscape-sysinfo 2>&1');
+        if (isset($output)) {
+        // Split the output into lines
+        $lines = explode("\n", $output);
+
+        // Loop over each line
+        foreach ($lines as $line) {
+        // If the line contains one of the keywords, echo it
+        if (strpos($line, 'Temperature') !== false ||
+        strpos($line, 'Usage of /') !== false ||
+        strpos($line, 'Memory usage') !== false ||
+        strpos($line, 'Users logged in') !== false ||
+        strpos($line, 'System load') !== false) {
+        echo "<p>" . $line . "</p>\n";
+        }
+        }
+        } else {
+        echo "Command execution failed.";
+        }
+        ?>
+    </div>
 
     <br>
     <hr>

@@ -13,9 +13,9 @@ if (isset($output)) {
         if (strpos($line, 'Temperature') !== false ||
             strpos($line, 'Usage of /') !== false ||
             strpos($line, 'Memory usage') !== false ||
-            strpos($line, 'Users logged in') !== false) {
-            echo $line . "\n";
-            echo "\n";
+            strpos($line, 'Users logged in') !== false ||
+            strpos($line, 'System load') !== false) {
+            echo $line . "<br>\n";
         }
     }
 } else {
