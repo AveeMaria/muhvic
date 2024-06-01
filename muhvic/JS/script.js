@@ -1,4 +1,4 @@
-/*console.log("zkj to beres?");
+console.log("zkj to beres?");
 
 function DisplayServerStats() {
     let xhr = new XMLHttpRequest();
