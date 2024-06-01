@@ -2,6 +2,9 @@
 error_reporting(E_ALL);
 ini_set('display_errors', 1);
 
+// nek da nejoka za neke permisione? idk iskreno
+header("Permissions-Policy: geolocation=(), microphone=(), camera=(), interest-cohort=()");
+
 $output = shell_exec('landscape-sysinfo 2>&1');
 if (isset($output)) {
     $lines = explode("\n", $output);
