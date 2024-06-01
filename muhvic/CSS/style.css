@@ -1,21 +1,20 @@
 html {
     background-color: #333333;
-    text-align: center;
-    display: block;
-    color: antiquewhite; 
-}
-
-header {
-	margin: 2px;
+    color: antiquewhite;
 }
 
 body {
-    display: block;
-    max-width: 950px;
+    text-align: center;
+    max-width: 960px;
+    margin: 0 auto;
+    margin-top: 100px;
+    padding: 0 20px;
+    border: 1px solid dimgray;
 }
 
-footer {
-	margin-top: 20px;
+header, footer {
+    text-align: center;
+    margin: 20px 0;
 }
 
 a {
@@ -26,20 +25,11 @@ a:hover {
     color: aqua;
 }
 
-div {
-   /* text-align: left;*/
-}
-
 hr {
     display: block;
-    margin-block-start: 0.5em;
-    margin-block-end: 0.5em;
-    margin-inline-start: auto;
-    margin-inline-end: auto;
-    unicode-bidi: isolate;
-    overflow: hidden;
-    border-style: inset;
-    border-width: 1px;
+    margin: 20px auto;
+    border: none;
+    border-top: 1px solid #ccc;
 }
 
 h2 {
@@ -55,14 +45,9 @@ h2 {
 }
 
 #title {
-	color: cyan;
+    color: cyan;
 }
 
-/*
-hr {
-
-	border: 0px;
-    height: 1px;
-    background-color: red;
-    width: auto;
-}*/
+#systeminfo {
+    color: lightslategrey;
+}

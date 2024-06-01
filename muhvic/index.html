@@ -11,44 +11,49 @@
     <script src="JS/script.js" defer></script>
 </head>
 
-<body onload="DisplayServerStats();">
-    <header>
-        <h1 id="title">Gašper Muhvič</h1>
-        <hr>
-    </header>
+<body onload="DisplayFakeServerStats(); DisplayServerStats();">
+    <div class="container">
+        <header>
+            <h1 id="title">Gašper Muhvič</h1>
+            <hr>
+        </header>
 
-    <div id="about_me">
-        <h2>About me</h2>
-        <p>Hi, I am a 17 year old student at Vegova Ljubljana.</p>
-        <p>In my spare time I like programming and doing maths.</p>
-        <br>
-    </div>
+        <div id="about_me">
+            <h2>About me</h2>
+            <p>Hi, I am a 17 year old student at Vegova Ljubljana.</p>
+            <p>In my spare time I like programming and doing maths.</p>
+            <br>
+        </div>
 
-    <div id="Projects">
-        <h2>My projects</h2>
-        <p>Project Mbappe</p>
-        <br>
-    </div>
-    <hr>
-    <div id="systeminfo"></div>
-    
-    <br>
-    <hr>
-    <footer>
+        <div id="Projects">
+            <h2>My projects</h2>
+            <p>project Mbappe</p>
+            <br>
+        </div>
+
         <div id="friends">
             <h2>Cool people(with websites) I know:</h2>
             <a href="http://oprin.net">Martin Oprin</a><br>
             <a href="http://ziga.kralj.io">Gigi (noce mene addat)</a><br>
-        </div>
-
-        <div id="socials">
-            <h2>Socials</h2>
-            <a href="https://github.com/AveeMaria">Github</a>
-        </div>
+        </div>        
 
         <hr>
-        <a id="source" href="https://github.com/AveeMaria/muhvic">source code</a>
+        <footer>
+            <div>
+                <h2>Server statistics</h2>
+                <div id="systeminfo">
 
-    </footer>
+                </div>
+            </div>
+
+            <div id="socials">
+                <h2>Socials</h2>
+                <a href="https://github.com/AveeMaria">Github</a>
+            </div>
+
+            <hr>
+            <a id="source" href="https://github.com/AveeMaria/muhvic">source code</a>
+        </footer>
+    </div>
 </body>
 </html>
