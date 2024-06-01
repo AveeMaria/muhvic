@@ -1,5 +1,7 @@
 console.log("zkj to beres?");
 
+setInterval(DisplayServerStats, 1000);
+
 function DisplayServerStats() {
     let xhr = new XMLHttpRequest();
     xhr.open('GET', '../PHP/sysinfo.php', true);
