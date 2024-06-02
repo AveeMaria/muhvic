@@ -12,8 +12,14 @@ body {
     border: 1px solid dimgray;
 }
 
-header, footer {
+header {
     text-align: center;
+    margin: 20px 0;
+}
+
+footer {
+    text-align: center;
+    text-align: left;
     margin: 20px 0;
 }
 
@@ -36,10 +42,6 @@ h2 {
     color: azure;
 }
 
-#source {
-    color: dimgray;
-}
-
 #socials {
     margin-top: 20px;
 }
@@ -50,4 +52,17 @@ h2 {
 
 #systeminfo {
     color: lightslategrey;
+}
+
+.container {
+    text-align: left;
+}
+
+#source {
+    text-align: center;
+    color: dimgray;
+}
+
+#source_container {
+    text-align: center;
 }
