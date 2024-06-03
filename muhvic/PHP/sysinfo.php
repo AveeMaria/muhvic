@@ -10,15 +10,16 @@ if (isset($output)) {
     $lines = explode("\n", $output);
 
     foreach ($lines as $line) {
-        if (strpos($line, 'Temperature') !== false ||
+        if (strpos($line, 'System load') !== false ||
+            strpos($line, 'Temperature') !== false ||
             strpos($line, 'Usage of /') !== false ||
-            strpos($line, 'Memory usage') !== false ||
-            strpos($line, 'Users logged in') !== false ||
-            strpos($line, 'System load') !== false) {
+            strpos($line, 'Processes') !== false ||
+            strpos($line, 'Memory usage') !== false) {
             echo $line . "<br>\n";
         }
     }
-} else {
+}
+else {
     echo "Command execution failed.";
 }
 ?>
