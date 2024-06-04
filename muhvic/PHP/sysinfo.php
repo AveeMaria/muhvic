@@ -13,7 +13,6 @@ if (isset($output)) {
         if (strpos($line, 'System load') !== false ||
             strpos($line, 'Temperature') !== false ||
             strpos($line, 'Usage of /') !== false ||
-            strpos($line, 'Processes') !== false ||
             strpos($line, 'Memory usage') !== false) {
             echo $line . "<br>\n";
         }
