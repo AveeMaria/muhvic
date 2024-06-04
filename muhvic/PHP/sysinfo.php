@@ -21,4 +21,5 @@ if (isset($output)) {
 else {
     echo "Command execution failed.";
 }
+//PHP <3
 ?>
