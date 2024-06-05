@@ -15,7 +15,7 @@ body {
 
 header {
     text-align: center;
-    margin: 20px 0;
+    margin: 10px 0;
 }
 
 footer {
@@ -28,9 +28,9 @@ a {
     color: aquamarine;
 }
 
-    a:hover {
-        color: aqua;
-    }
+a:hover {
+    color: aqua;
+}
 
 hr {
     display: block;
@@ -67,6 +67,10 @@ pre {
     white-space: pre-wrap; /* Allow the content to wrap */
 }
 
+p {
+    margin-left: 20px;
+}
+
 .centered-ascii {
     display: flex;
     justify-content: center;
@@ -77,6 +81,7 @@ pre {
 }
 
 #source {
+    margin: 0;
     color: dimgray;
     display: inline-block;
 }
