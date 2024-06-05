@@ -28,9 +28,9 @@ a {
     color: aquamarine;
 }
 
-    a:hover {
-        color: aqua;
-    }
+a:hover {
+    color: aqua;
+}
 
 hr {
     display: block;
@@ -75,7 +75,7 @@ pre {
 /* Media query for smaller screens */
 @media (max-width: 600px) {
     pre {
-        font-size: 5px; /* Adjust this value as needed */
+        font-size: 4.5px; /* Adjust this value as needed */
     }
 }
 
