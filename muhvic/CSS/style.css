@@ -28,9 +28,9 @@ a {
     color: aquamarine;
 }
 
-a:hover {
-    color: aqua;
-}
+    a:hover {
+        color: aqua;
+    }
 
 hr {
     display: block;
@@ -77,4 +77,13 @@ pre {
     pre {
         font-size: 5px; /* Adjust this value as needed */
     }
+}
+
+#source_container {
+    text-align: center;
+}
+
+#source {
+    color: dimgray;
+    display: inline-block;
 }
