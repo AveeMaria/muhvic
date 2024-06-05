@@ -28,9 +28,9 @@ a {
     color: aquamarine;
 }
 
-a:hover {
-    color: aqua;
-}
+    a:hover {
+        color: aqua;
+    }
 
 hr {
     display: block;
@@ -72,13 +72,6 @@ pre {
     justify-content: center;
 }
 
-/* Media query for smaller screens */
-@media (max-width: 600px) {
-    pre {
-        font-size: 4.5px; /* Adjust this value as needed */
-    }
-}
-
 #source_container {
     text-align: center;
 }
@@ -86,4 +79,11 @@ pre {
 #source {
     color: dimgray;
     display: inline-block;
+}
+
+#title-image {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
 }
