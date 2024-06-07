@@ -96,3 +96,12 @@ p {
 #systeminfo {
     margin-left: 20px;
 }
+
+#language_select {
+    text-align: right;
+}
+
+#language_flag {
+    width: 40px;
+    height: 20px;
+}

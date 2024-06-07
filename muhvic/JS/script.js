@@ -1,8 +1,9 @@
 console.log("zkj to beres?");
 
 let statRefreshTime = 1000;
+let eng = true;
 
-setInterval(DisplayServerStats, statRefreshTime);
+//setInterval(DisplayServerStats, statRefreshTime);
 
 //pokaze ce streznik gori
 function DisplayServerStats() {
@@ -37,3 +38,29 @@ function DisplayFakeServerStats() {
 
     systemInfoDiv.innerHTML = systemInfo;
 }
+
+
+
+
+
+let imageElement = document.getElementById('language_flag');
+function changeLangImage() {
+
+    if (!eng) {
+        console.log("slo->eng\n");
+        imageElement.src = 'assets/si.png';
+        //button.style.backgroundImage = "url('assets/si.png')";
+        eng = !eng;
+    }
+    else {
+        console.log("eng->slo\n");
+        imageElement.src = 'assets/ew.png';
+        //button.style.backgroundImage = "url('assets/ew.png')";
+        eng = !eng;
+    }
+}
+
+const languageflag = document.getElementById('language_flag');
+// fake gumb!!!
+languageflag.addEventListener('click', changeLangImage);
+
