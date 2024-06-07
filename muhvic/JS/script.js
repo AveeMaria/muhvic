@@ -24,7 +24,6 @@ function DisplayServerStats() {
     xhr.send();
 }
 
-
 //displaya fake statse med body-ondload da se ne opaz delaya od commanda
 function DisplayFakeServerStats() {
     //izjemno smesne stevilke, vem
