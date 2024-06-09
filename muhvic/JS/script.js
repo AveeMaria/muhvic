@@ -40,13 +40,14 @@ function DisplayFakeServerStats() {
 
 function changeLangImage() {
     let imageElement = document.getElementById('language_flag');
-    if (!eng) {
-        //console.log("slo->eng\n");
+
+    if (eng) {
+        //console.log("eng->slo\n");
         imageElement.src = 'assets/en.png';
         eng = !eng;
     }
     else {
-        //console.log("eng->slo\n");
+        //console.log("slo->eng\n");
         imageElement.src = 'assets/si.png';
         eng = !eng;
     }
