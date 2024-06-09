@@ -41,15 +41,13 @@ function DisplayFakeServerStats() {
 function changeLangImage() {
     let imageElement = document.getElementById('language_flag');
     if (!eng) {
-        console.log("slo->eng\n");
-        imageElement.src = 'assets/si.png';
-        //button.style.backgroundImage = "url('assets/si.png')";
+        //console.log("slo->eng\n");
+        imageElement.src = 'assets/en.png';
         eng = !eng;
     }
     else {
-        console.log("eng->slo\n");
-        imageElement.src = 'assets/ew.png';
-        //button.style.backgroundImage = "url('assets/ew.png')";
+        //console.log("eng->slo\n");
+        imageElement.src = 'assets/si.png';
         eng = !eng;
     }
 }
@@ -57,3 +55,23 @@ function changeLangImage() {
 const languageflag = document.getElementById('language_flag');
 // fake gumb!!!
 languageflag.addEventListener('click', changeLangImage);
+
+function toggleLanguage() {
+    const elements = document.querySelectorAll('[data-lang]');
+    elements.forEach(element => {
+        if (element.style.display === 'none') {
+            element.style.display = '';
+        } else {
+            element.style.display = 'none';
+        }
+    });
+
+    const languageFlag = document.getElementById('language_flag');
+
+    if (languageFlag.src.includes('si.png')) {
+        languageFlag.src = 'assets/en.png';
+    }
+    else {
+        languageFlag.src = 'assets/si.png';
+    }
+}

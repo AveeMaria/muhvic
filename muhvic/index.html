@@ -27,62 +27,76 @@
             <hr>
         </header>
 
-        <div id="language_select">
-            <img id="language_flag" src="assets/si.png"/>
+        <div id="language_select" onclick="toggleLanguage()">
+            <img id="language_flag" src="assets/si.png" alt="Slovenian" />
         </div>
 
         <div id="about_me">
-            <h2>About me</h2>
-            <p>Hi, I am Gašper Muhvič, a 17 year old computer science student at Vegova Ljubljana.</p>
-            <p>I like programming and doing maths.</p>
-            <p>In my spare time I go outside and do sports.</p>
+            <h2 data-lang="en">About me</h2>
+            <h2 data-lang="si" style="display:none;">O meni</h2>
+            <p data-lang="en">Hi, I am Gašper Muhvič, a 17 year old computer science student at Vegova Ljubljana.</p>
+            <p data-lang="si" style="display:none;">Živjo, sem Gašper Muhvič, 17-letni dijak računalništva na Vegovi v Ljubljani.</p>
+            <p data-lang="en">I like programming and doing maths.</p>
+            <p data-lang="si" style="display:none;">Rad imam programiranje in matematiko.</p>
+            <p data-lang="en">In my spare time I go outside and do sports.</p>
+            <p data-lang="si" style="display:none;">V prostem času hodim vn in se ukvarjam s športom.</p>
             <br>
         </div>
 
         <div id="education">
-            <h2>Education</h2>
+            <h2 data-lang="en">Education</h2>
+            <h2 data-lang="si" style="display:none;">Izobrazba</h2>
             <ul>
-                <li>Sucesfully finished primary school</li>
-                <li>Currently studying at Vegova 3/4 </li>
-                <li>what's next?</li>
+                <li data-lang="en">Successfully finished primary school</li>
+                <li data-lang="si" style="display:none;">Uspešno zaključil osnovno šolo</li>
+                <li data-lang="en">Currently studying at Vegova 3/4</li>
+                <li data-lang="si" style="display:none;">Trenutno sem na Vegovi 3/4</li>
             </ul><br>
         </div>
 
         <div id="Projects">
-            <h2>My projects</h2>
-            <p>project Mbappe</p>
-            <p>met RPA 5</p>
-            <p><a href="https://www.vegova.si">Vegova testi</a></p>
+            <h2 data-lang="en">My projects</h2>
+            <h2 data-lang="si" style="display:none;">Moji projekti</h2>
+            <p data-lang="en">project Mbappe</p>
+            <p data-lang="si" style="display:none;">projekt Mbappe</p>
+            <p data-lang="en">have RPA 5</p>
+            <p data-lang="si" style="display:none;">met RPA 5</p>
+            <p data-lang="en"><a href="https://www.vegova.si">Vegova testi</a></p>
+            <p data-lang="si" style="display:none;"><a href="https://www.vegova.si">Vegova testi</a></p>
             <br>
         </div>
 
         <div id="friends">
-            <h2>Cool people (with websites)</h2>
+            <h2 data-lang="en">Cool people (with websites)</h2>
+            <h2 data-lang="si" style="display:none;">Kul ljudje (s spletnimi stranmi)</h2>
             <ul>
                 <li><a href="http://oprin.net">Martin Oprin</a></li>
                 <li><a href="http://ziga.kralj.io">Žiga Kralj</a></li>
             </ul><br>
-            
         </div>
 
         <hr>
         <footer>
             <div id="socials">
-                <h2>Socials</h2>
+                <h2 data-lang="en">Socials</h2>
+                <h2 data-lang="si" style="display:none;">Družbena omrežja</h2>
                 <ul>
                     <li><a href="https://github.com/AveeMaria">Github</a></li>
-                    <li>email coming soon</li>
+                    <li data-lang="en">email coming soon</li>
+                    <li data-lang="si" style="display:none;">e-pošta prihaja kmalu</li>
                 </ul>
             </div><br>
 
             <div id="systeminfo_container">
-                <h2>Server statistics</h2>
+                <h2 data-lang="en">Server statistics</h2>
+                <h2 data-lang="si" style="display:none;">Statistika strežnika</h2>
                 <div id="systeminfo"></div>
             </div>
 
             <hr>
             <div id="source_container">
-                <a id="source" href="https://github.com/AveeMaria/muhvic">source code</a>
+                <a id="source" href="https://github.com/AveeMaria/muhvic" data-lang="en">source code</a>
+                <a id="source" href="https://github.com/AveeMaria/muhvic" data-lang="si" style="display:none;">izvorna koda</a>
             </div>
         </footer>
     </div>
