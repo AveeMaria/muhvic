@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Gašper Muhvič</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
+    <meta name="description" content="I am Gašper Muhvič, a 17-year-old CS student at Vegova Ljubljana who enjoys programming and maths.">
+    <meta name="keywords" content="Gašper Muhvič,Gasper, Muhvic, Gasper Muhvic Muhvič, Vegova, Vegova Ljubljana">
+
+    <!-- Open graph meta tags
+    <meta property="og:title" content="Gašper Muhvič">
+    <meta property="og:description" content="I am Gašper Muhvič, a 17-year-old CS student at Vegova Ljubljana who enjoys programming and maths.">
+    <meta property="og:image" content="https://muhvic.com/assets/favicon.ico">
+    <meta property="og:url" content="https://muhvic.com">
+    <meta property="og:type" content="website">-->
+
+    <link type="text/css" rel="stylesheet" href="CSS/style.css">
+    <link rel="icon" href="assets/favicon.ico">
+    <script src="JS/script.js" defer></script>
+    
+    <style>
+        .dimniki th, td {
+            border: solid 2px;
+            padding: 0.5rem;
+            border-color: black;
+        }
+        .oddajniki th, td {
+            border: solid 2px;
+            padding: 0.5rem;
+            border-color: black;
+        }
+
+        .oddajniki, .dimniki {
+            border-color: black;
+            border-collapse: collapse;
+            border: solid 2px;
+        }
+
+        h1 {
+            color: cyan;
+        }
+    </style>
+
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 data-lang="en">Tallest objects in Slovenia (occupied zones excluded)</h1>
+            <h1 data-lang="si" style="display:none;">Najvišji objekti v Sloveniji (brez okupiranih teritorijev)</h1>
+        </header>
+
+        <div id="language_select">
+            <img id="language_flag" onclick="toggleLanguage()" src="assets/si.png" alt="Slovenian" />
+            <hr>
+        </div>
+
+        <div id="dimniki">
+            <h2 data-lang="en">Chimneys</h2>
+            <h2 data-lang="si" style="display:none;">Dimniki</h2>
+
+
+            <table class="dimniki">
+                <tr>
+                    <th>št.</th>
+                    <th>ime oddajnika</th>
+                    <th>višina [m]</th>
+                    <th>letnica</th>
+                    <th>kraj</th>
+                    <th>obiskal</th>
+                </tr>
+                <tr>
+                    <td>1.</td>
+                    <td>Dimnik TET blok 4</td>
+                    <td>360</td>
+                    <td>1976</td>
+                    <td>Trbovlje</td>
+                    <td>ne</td>
+                </tr>
+                <tr>
+                    <td>2.</td>
+                    <td>Dimnik TEŠ blok 5</td>
+                    <td>230</td>
+                    <td>1978</td>
+                    <td>Šoštanj</td>
+                    <td>ne</td>
+                </tr>
+                <tr>
+                    <td>3.</td>
+                    <td>Hladilni stolp TEŠ bloka 6</td>
+                    <td>165</td>
+                    <td>2012</td>
+                    <td>Šoštanj</td>
+                    <td>ne</td>
+                </tr>
+                <tr>
+                    <td>4.</td>
+                    <td>Dimnik TEŠ blok 4</td>
+                    <td>150</td>
+                    <td>1972</td>
+                    <td>Šoštanj</td>
+                    <td>ne</td>
+                </tr>
+                <tr>
+                    <td>5.</td>
+                    <td>Dimnik Energetika Ljubljana</td>
+                    <td>150</td>
+                    <td>1981</td>
+                    <td>Ljubljana</td>
+                    <td>da</td>
+                </tr>
+                <tr>
+                    <td>6.</td>
+                    <td>Kotel TEŠ bloka 6</td>
+                    <td>122</td>
+                    <td>2014</td>
+                    <td>Šoštanj</td>
+                    <td>ne</td>
+                </tr>
+                <tr>
+                    <td>7.</td>
+                    <td>Dimnik Moste Toplarna Ljubljana</td>
+                    <td>101</td>
+                    <td>1966</td>
+                    <td>Ljubljana</td>
+                    <td>da</td>
+                </tr>
+                <tr>
+                    <td>8.</td>
+                    <td>TEŠ blok [1, 2, 3]</td>
+                    <td>100</td>
+                    <td>1956</td>
+                    <td>Šoštanj</td>
+                    <td>ne</td>
+                </tr>
+                <tr>
+                    <td>9.</td>
+                    <td>Kotel TEŠ bloka 5</td>
+                    <td>96</td>
+                    <td>1977</td>
+                    <td>Šoštanj</td>
+                    <td>ne</td>
+                </tr>
+                <tr>
+                    <td>10.</td>
+                    <td>Stara hladilna stolpa blokov 5 in 6</td>
+                    <td>94</td>
+                    <td>1976</td>
+                    <td>Šoštanj</td>
+                    <td>ne</td>
+                </tr>
+                <tr>
+                    <td>11.</td>
+                    <td>Kotel TEŠ bloka 4</td>
+                    <td>89</td>
+                    <td>1972</td>
+                    <td>Šoštanj</td>
+                    <td>ne</td>
+                </tr>
+                <tr>
+                    <td>12.</td>
+                    <td>Jeseniški dimnik</td>
+                    <td>75</td>
+                    <td>1972</td>
+                    <td>Šoštanj</td>
+                    <td>ne</td>
+                </tr>
+            </table>
+
+        </div>
+        
+        <div id="oddajniki">
+            <h2 data-lang="en">Transmitters</h2>
+            <h2 data-lang="si" style="display:none;">Oddajniki</h2>
+
+
+            <table class="oddajniki">
+                <tr>
+                    <th>št.</th>
+                    <th>ime</th>
+                    <th>višina (m)</th>
+                    <th>letnica nastanka</th>
+                    <th>kraj</th>
+                    <th>obiskal</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Triglav</td>
+                    <td>170</td>
+                    <td>1971</td>
+                    <td>Triglav</td>
+                    <td>ne</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Kum</td>
+                    <td>150</td>
+                    <td>1975</td>
+                    <td>Kum</td>
+                    <td>ne</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Nanos</td>
+                    <td>148</td>
+                    <td>1970</td>
+                    <td>Nanos</td>
+                    <td>ne</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Krim</td>
+                    <td>110</td>
+                    <td>1985</td>
+                    <td>Krim</td>
+                    <td>ne</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Maribor (TV)</td>
+                    <td>107</td>
+                    <td>1984</td>
+                    <td>Maribor</td>
+                    <td>ne</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Žalec</td>
+                    <td>100</td>
+                    <td>1985</td>
+                    <td>Žalec</td>
+                    <td>ne</td>
+                </tr>
+                <tr>
+                    <td>7</td>
+                    <td>Kriška gora</td>
+                    <td>97</td>
+                    <td>1982</td>
+                    <td>Kriška gora</td>
+                    <td>ne</td>
+                </tr>
+                <tr>
+                    <td>8</td>
+                    <td>Celje</td>
+                    <td>90</td>
+                    <td>1995</td>
+                    <td>Celje</td>
+                    <td>ne</td>
+                </tr>
+                <tr>
+                    <td>9</td>
+                    <td>Koper</td>
+                    <td>85</td>
+                    <td>1983</td>
+                    <td>Koper</td>
+                    <td>ne</td>
+                </tr>
+                <tr>
+                    <td>10</td>
+                    <td>Piran</td>
+                    <td>82</td>
+                    <td>1990</td>
+                    <td>Piran</td>
+                    <td>ne</td>
+                </tr>
+                <tr>
+                    <td>11</td>
+                    <td>Sveta Gera</td>
+                    <td>80</td>
+                    <td>1990</td>
+                    <td>Sveta Gera</td>
+                    <td>ne</td>
+                </tr>
+                <tr>
+                    <td>12</td>
+                    <td>Velika planina</td>
+                    <td>80</td>
+                    <td>1984</td>
+                    <td>Velika planina</td>
+                    <td>ne</td>
+                </tr>
+                <tr>
+                    <td>13</td>
+                    <td>Stari trg</td>
+                    <td>78</td>
+                    <td>1981</td>
+                    <td>Stari trg</td>
+                    <td>ne</td>
+                </tr>
+                <tr>
+                    <td>14</td>
+                    <td>Tolmin</td>
+                    <td>75</td>
+                    <td>1986</td>
+                    <td>Tolmin</td>
+                    <td>ne</td>
+                </tr>
+                <tr>
+                    <td>15</td>
+                    <td>Ajdovščina</td>
+                    <td>74</td>
+                    <td>1991</td>
+                    <td>Ajdovščina</td>
+                    <td>ne</td>
+                </tr>
+                <tr>
+                    <td>16</td>
+                    <td>Domžale</td>
+                    <td>72</td>
+                    <td>1992</td>
+                    <td>Domžale</td>
+                    <td>ne</td>
+                </tr>
+                <tr>
+                    <td>17</td>
+                    <td>Murska Sobota</td>
+                    <td>70</td>
+                    <td>1988</td>
+                    <td>Murska Sobota</td>
+                    <td>ne</td>
+                </tr>
+                <tr>
+                    <td>18</td>
+                    <td>Postojna</td>
+                    <td>68</td>
+                    <td>1989</td>
+                    <td>Postojna</td>
+                    <td>ne</td>
+                </tr>
+                <tr>
+                    <td>19</td>
+                    <td>Velenje</td>
+                    <td>67</td>
+                    <td>1987</td>
+                    <td>Velenje</td>
+                    <td>ne</td>
+                </tr>
+                <tr>
+                    <td>20</td>
+                    <td>Nova Gorica</td>
+                    <td>65</td>
+                    <td>1994</td>
+                    <td>Nova Gorica</td>
+                    <td>ne</td>
+                </tr>
+            </table>
+
+        </div>
+
+
+
+
+
+
+        <!--<div id="Projects">
+        <h2 data-lang="en">My projects</h2>
+        <h2 data-lang="si" style="display:none;">Moji projekti</h2>
+        <p data-lang="en">project Mbappe</p>
+        <p data-lang="si" style="display:none;">projekt Mbappe</p>
+        <p data-lang="en">have RPA 5 (failed)</p>
+        <p data-lang="si" style="display:none;">met RPA 5 (failed)</p>
+        <p data-lang="en"><a href="https://github.com/AveeMaria/TESTI">VEGOVA TESTI</a></p>
+        <p data-lang="si" style="display:none;"><a href="https://github.com/AveeMaria/TESTI">VEGOVA TESTI</a></p>
+        <br>
+    </div>-->
+
+
+        <footer>
+            <div id="home">
+                <hr>
+                <a href="index.html" style="color: darkcyan">[HOME]</a>
+            </div>
+        </footer>
+        </div>
+</body>
+</html>
