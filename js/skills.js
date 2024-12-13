@@ -4,6 +4,7 @@ async function loadSkills() {
         const skills = await response.json();
 
         const skillList = document.getElementById("skills-list");
+        shuffleArray(skills);
 
         if (!skills) {
             console.log("Skill issue.\n");

@@ -16,6 +16,12 @@ p {
 	font-size: var(--text-size);
 }
 
+@media (max-width: 800px) {
+	p {
+		margin-left: 0;
+	}
+}
+
 a {
 	padding: 0;
 	margin: 0;
@@ -26,6 +32,12 @@ a {
 
 ul {
 	margin-left: calc(1 * var(--text-size));
+}
+
+@media (max-width: 800px) {
+	ul {
+		padding-left: 0;
+	}
 }
 
 li {
