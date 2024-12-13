@@ -1,0 +1,49 @@
+body {
+	font-family: "Robotto", sans-serif;
+}
+
+p, li, td, th {
+	color: var(--text-color);
+}
+
+h1, h2, h3 {
+	font-size: var(--title-size);
+	color: var(--title-color);
+}
+
+p {
+	margin-left: calc(1 * var(--text-size));
+	font-size: var(--text-size);
+}
+
+a {
+	padding: 0;
+	margin: 0;
+	font-size: var(--text-size);
+	color: var(--link-color);
+	text-decoration: none;
+}
+
+ul {
+	margin-left: calc(1 * var(--text-size));
+}
+
+li {
+	font-size: var(--text-size);
+}
+
+td, th {
+	font-size: var(--text-size);
+}
+
+td {
+
+}
+
+th {
+
+}
+
+table {
+	border-collapse: collapse;
+}

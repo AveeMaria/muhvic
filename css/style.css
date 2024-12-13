@@ -1,0 +1,238 @@
+@import url('root.css');
+@import url('text.css');
+@import url('misc.css');
+
+
+html {
+	margin: 0;
+	padding: 0;
+
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--bg-color);/*
+	background: linear-gradient(to right, var(--bg-color), var(--nav-color));
+	background: conic-gradient(var(--bg-color), var(--nav-color));
+	background: linear-gradient( , var(--nav-color), var(--bg-color));
+
+	background: radial-gradient(ellipse, var(--nav-color), var(--bg-color));
+*/ 
+}
+
+main {
+	width: 80vw;
+	margin: 5vh auto;
+}
+
+footer {
+	background-color: #222;
+	height: 5vh;
+
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	display: none;
+}
+
+	footer p {
+		align-content: center;
+	}
+
+nav {
+	margin: 0;
+	padding: 0;
+
+	height: 10vh;
+	max-width: 100vw;
+
+	background-color: var(--nav-color);	
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-content: center;
+	position: sticky;/*zakaj je sticky trash in nedela?*/
+	overflow: clip;
+	top: 0;
+}
+
+	.nav-items-list {
+		list-style-type: none;
+
+		display: flex;
+		flex-direction: row;
+
+		margin: 0;
+		padding: 0;
+	}
+
+		.nav-item {
+			display: block;
+			justify-content: center;
+			align-content: center;
+
+			font-weight: 600;
+
+			color: var(--text-color);
+
+			padding: 0.5em;
+			margin: 0;
+		}
+
+			.nav-link {
+
+			font-weight: 600;
+
+				color: inherit;
+				text-decoration: none;
+			}
+
+@media (max-width: 800px) {
+	.nav-items-list {
+		display: none !important;
+	}
+}
+
+
+.container {
+	margin: 5vh 0;
+
+	padding: 5%;
+
+	border: dashed 2px var(--container-border-color);
+	border-radius: var(--container-radius);
+}
+
+	.container:first-child {
+		margin-top: 0;
+	}
+
+	.container:last-child {	
+		margin-bottom: 0;
+	}
+
+	.container:nth-child(1n) {
+	}
+
+	.container:nth-child(2n) {
+	}
+
+#hero {
+	height: 90vh;
+	text-align: center;
+	align-content: center;
+}
+
+
+#quote-container {
+	text-align: left;
+	margin: 0 auto;
+	max-width: 50vw;
+}
+
+	#quote {
+		margin: 0;
+	}
+
+	#quote-by {
+		margin: 0;
+		float: right;
+	}
+
+
+#books-table {
+	width: 100%;
+	border: dashed 1px var(--container-border-color);
+}
+
+	#books-table th, #books-table td {
+		padding: calc(var(--text-size) / 2);
+	}
+
+	#books-table th {
+		border: dashed 1px var(--container-border-color);
+		color: var(--link-color);
+	}
+
+	#books-table td {
+		border-left: dashed 1px var(--container-border-color);
+		border-right: dashed 1px var(--container-border-color);
+		text-align: left;
+	}
+
+		#books-table td:nth-child(3) {
+			text-align: center;
+		}
+
+#books-table-replacement {
+	display: none;
+}
+
+@media (max-width: 800px) {
+	#books-table {
+		display: none;
+	}
+	#books-table-replacement {
+		display: block;
+	}
+}
+
+
+#skills-list {
+	list-style-type: none;
+    padding: var(--text-size);
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: row;
+}
+
+	#skills-list li {
+		background-color: var(--link-color);
+		font-weight: 1000;
+		padding: 6px;
+		margin: 4px;
+		border: none;
+		border-radius: 10px;
+	}
+
+	#skills-list li:hover {
+		scale: 1.1;
+	}
+
+		.lvl1 {
+			color: darkred;
+		}
+
+		.lvl2 {
+			color: orangered;
+		}
+
+		.lvl3 {
+			color: orange;
+		}
+
+		.lvl4 {
+			color: green;	
+		}
+
+		.lvl5 {
+			color: limegreen;
+		}
+
+@media (max-width: 800px) {
+	#skills-list {
+		padding: 0;
+	}
+
+	#skills-list li {
+		padding: 4px;
+		margin: 4px;
+		font-weight: 500;
+		font-size: calc(var(--text-size) / 1.2);
+	}
+}
