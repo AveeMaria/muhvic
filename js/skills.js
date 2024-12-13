@@ -4,7 +4,7 @@ async function loadSkills() {
         const skills = await response.json();
 
         const skillList = document.getElementById("skills-list");
-        shuffleArray(skills);
+        shuffleArray(skills);//every day we shuffelin
 
         if (!skills) {
             console.log("Skill issue.\n");
@@ -40,6 +40,13 @@ async function loadSkills() {
         });
     } catch (error) {
         console.log("Error:", error);
+    }
+}
+
+function shuffleArray(arr) {
+    for (let i = arr.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [arr[i], arr[j]] = [arr[j], arr[i]];
     }
 }
 
