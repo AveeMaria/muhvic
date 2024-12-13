@@ -26,6 +26,10 @@ main {
 	margin: 5vh auto;
 }
 
+header {
+	position: absolute;
+}
+
 footer {
 	background-color: #222;
 	height: 5vh;
@@ -44,25 +48,21 @@ nav {
 	margin: 0;
 	padding: 0;
 
-	height: 10vh;
-	max-width: 100vw;
+	max-width: 10vw;
+	height: 100vh;
 
-	background-color: var(--nav-color);	
+	position: fixed;
+	right: 0;
 
 	display: flex;
-	flex-direction: row;
-	justify-content: space-between;
-	align-content: center;
-	position: sticky;/*zakaj je sticky trash in nedela?*/
-	overflow: clip;
-	top: 0;
+    align-items: center;
 }
 
 	.nav-items-list {
 		list-style-type: none;
 
 		display: flex;
-		flex-direction: row;
+		flex-direction: column;
 
 		margin: 0;
 		padding: 0;
@@ -75,7 +75,11 @@ nav {
 
 			font-weight: 600;
 
+			background-color: var(--nav-color);	
+			background-color: unset;
 			color: var(--text-color);
+			color: var(--nav-color);
+
 
 			padding: 0.5em;
 			margin: 0;
@@ -91,7 +95,7 @@ nav {
 
 @media (max-width: 800px) {
 	.nav-items-list {
-		display: none !important;
+		/*display: none !important;*/
 	}
 }
 
@@ -120,15 +124,44 @@ nav {
 	}
 
 #hero {
-	height: 90vh;
+	height: 100vh;
+	display: block;
 	text-align: center;
 	align-content: center;
+	justify-content: center;
 }
 
+/*TO JE TOK BLOATED rabm #gif
+#arrow {
+	background-color: red;
+	width: 50px;
+	aspect-ratio: 1 / 1;
+
+	background-color: var(--text-color);
+
+	margin: 0 auto;
+
+	position: absolute;
+	top: calc(90vh - 50px);
+	left: calc(50vw - 50px / 2);
+
+	animation: up-down 1.5s infinite;
+}
+
+	@keyframes up-down {
+		0%, 100% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(50px);
+		}
+	}
+*/
 
 #quote-container {
 	text-align: left;
 	margin: 0 auto;
+
 	max-width: 50vw;
 }
 
@@ -179,7 +212,6 @@ nav {
 	}
 }
 
-
 #skills-list {
 	list-style-type: none;
     padding: var(--text-size);
@@ -201,7 +233,7 @@ nav {
 	}
 
 	#skills-list li:hover {
-		scale: 1.1;
+		scale: 1.05;
 	}
 
 		.lvl1 {
@@ -236,3 +268,5 @@ nav {
 		font-size: calc(var(--text-size) / 1.2);
 	}
 }
+
+

@@ -1,6 +1,6 @@
 async function displayRandomQuote() {
     try {
-        const response = await fetch('https://aveemaria.github.io/random/quotes.json');
+        const response = await fetch(window.location.href + '/json/quotes.json');
         const quotes = await response.json();
 
         const randomIndex = Math.floor(Math.random() * quotes.length);
