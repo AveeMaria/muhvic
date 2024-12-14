@@ -40,6 +40,7 @@ footer {
 	}
 
 .mystery {
+	width: 100%;
 	border: dashed 1px var(--container-border-color);
 	margin: 2em 0;
 }
@@ -50,14 +51,9 @@ footer {
 	}
 	
 	.mystery td {
-
+		padding: calc(var(--text-size) / 2);
 	}
 
-
-#rosary {
-	max-width: 100%;
-	max-height: 90%;
-}
 
 #rosary-container {
 	height: 100vh;
@@ -68,8 +64,12 @@ footer {
     text-align: center;
     align-items: center;
     flex-wrap: nowrap;
-
 }
+
+	#rosary {
+		max-width: 100%;
+		max-height: 90%;
+	}
 
 #title {
 	position: absolute;
