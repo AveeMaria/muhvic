@@ -34,6 +34,7 @@ async function loadSkills() {
                     break;
                 default:
                     li.classList.add("g0");
+                    break;
             }
 
             skillList.appendChild(li);
