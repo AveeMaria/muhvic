@@ -14,13 +14,7 @@ html {
 body {
 	margin: 0;
 	padding: 0;
-	background-color: var(--bg-color);/*
-	background: linear-gradient(to right, var(--bg-color), var(--nav-color));
-	background: conic-gradient(var(--bg-color), var(--nav-color));
-	background: linear-gradient( , var(--nav-color), var(--bg-color));
-
-	background: radial-gradient(ellipse, var(--nav-color), var(--bg-color));
-*/ 
+	background-color: var(--bg-color);
 }
 
 main {
@@ -149,36 +143,35 @@ footer {
 }
 
 	#skills-list li {
-		background-color: var(--link-color);
+		color: white;
 		font-weight: 1000;
 		padding: 6px;
 		margin: 4px;
-		border: none;
+		border: solid 1px var(--link-color);
 		border-radius: 10px;
 	}
 
 	#skills-list li:hover {
 		scale: 1.05;
 	}
+		.g0 {
+			background-color: #98d8ea;
+		}
 
-		.lvl1 {
-			color: darkred;
+		.g1 {
+			background-color: #9fbe7e;
 		} 
 
-		.lvl2 {
-			color: orangered;
+		.g2 {
+			background-color: #ffc80f;
 		}
 
-		.lvl3 {
-			color: orange;
+		.g3 {
+			background-color: #7192bf;
 		}
 
-		.lvl4 {
-			color: green;	
-		}
-
-		.lvl5 {
-			color: limegreen;
+		.g4 {
+			background-color: #cc8dcd;	
 		}
 
 @media (max-width: 800px) {
@@ -193,5 +186,3 @@ footer {
 		font-size: calc(var(--text-size) / 1.2);
 	}
 }
-
-

@@ -16,7 +16,7 @@ async function loadSkills() {
             const li = document.createElement("li");
             li.textContent = skill.name;
 
-            switch (skill.level) {
+            switch (skill.group) {
                 case 0:
                     li.classList.add("g0");
                     break;
@@ -31,12 +31,6 @@ async function loadSkills() {
                     break;
                 case 4:
                     li.classList.add("g4");
-                    break;
-                case 5:
-                    li.classList.add("g5");
-                    break;
-                case 6:
-                    li.classList.add("g6");
                     break;
                 default:
                     li.classList.add("g0");

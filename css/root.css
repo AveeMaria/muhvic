@@ -15,8 +15,6 @@
 	--text-color: #DBE9F4;
 	--bg-color: #30353f;/*#333*/
 
-	
-
 
 /*
 NIKA KOLORS
@@ -55,7 +53,7 @@ NIKA KOLORS
 
 @media (max-width: 800px) {
     :root {
-    	--title-size: 24px;
-        --text-size: 18px;
+    	--title-size: 30px;
+        --text-size: 20px;
     }
 }
