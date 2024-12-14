@@ -61,11 +61,14 @@ footer {
 
 #rosary-container {
 	height: 100vh;
-	display: block;
+    display: flex;
+    flex-direction: column;
 
-	align-content: center;
-	justify-content: center;
-	text-align: center;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-wrap: nowrap;
+
 }
 
 #title {
