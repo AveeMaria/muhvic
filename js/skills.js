@@ -1,6 +1,6 @@
 async function loadSkills() {
     try {
-        const response = await fetch(window.location.href + '/json/skills.json');
+        const response = await fetch('https://muhvic.com/json/skills.json');
         const skills = await response.json();
 
         const skillList = document.getElementById("skills-list");

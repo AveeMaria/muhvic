@@ -1,6 +1,6 @@
 async function loadBooks() {
     try {
-        const response = await fetch(window.location.href + '/json/books.json');
+        const response = await fetch('https://muhvic.com/json/books.json');
         const books = await response.json();
 
         const table = document.getElementById("books-table").getElementsByTagName("tbody")[0];
