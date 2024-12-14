@@ -17,23 +17,29 @@ async function loadSkills() {
             li.textContent = skill.name;
 
             switch (skill.level) {
+                case 0:
+                    li.classList.add("g0");
+                    break;
                 case 1:
-                    li.classList.add("lvl1");
+                    li.classList.add("g1");
                     break;
                 case 2:
-                    li.classList.add("lvl2");
+                    li.classList.add("g2");
                     break;
                 case 3:
-                    li.classList.add("lvl3");
+                    li.classList.add("g3");
                     break;
                 case 4:
-                    li.classList.add("lvl4");
+                    li.classList.add("g4");
                     break;
                 case 5:
-                    li.classList.add("lvl5");
+                    li.classList.add("g5");
+                    break;
+                case 6:
+                    li.classList.add("g6");
                     break;
                 default:
-                    li.classList.add("lvl1");
+                    li.classList.add("g0");
             }
 
             skillList.appendChild(li);

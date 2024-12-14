@@ -1,162 +1,114 @@
 [
 	{
 		"name" : "C/C++",
-		"level" : 5
+		"group" : "1"
 	},
 	{
 		"name" : "Python",
-		"level" : 1
-	},
-	{
-		"name" : "PHP",
-		"level" : 5
+		"group" : "1"
 	},
 	{
 		"name" : "SQL",
-		"level" : 4
+		"group" : "1"
 	},
 	{
 		"name" : "MySQL",
-		"level" : 4
+		"group" : "1"
 	},
 	{
 		"name" : "Firebird",
-		"level" : 3
+		"group" : "1"
+	},
+	{
+		"name" : "PHP",
+		"group" : "2"
 	},
 	{
 		"name" : "JS",
-		"level" : 3
+		"group" : "2"
+	},
+	{
+		"name" : "HTML/CSS",
+		"group" : "2"
 	},
 	{
 		"name" : "Siemens",
-		"level" : 4
+		"group" : "3"
 	},
 	{
 		"name" : "Arduino",
-		"level" : 4
+		"group" : "3"
 	},
 	{
 		"name" : "Tia Portal",
-		"level" : 3
-	},
-	{
-		"name" : "Git",
-		"level" : 5
-	},
-	{
-		"name" : "ChatGPT",
-		"level" : 5
+		"group" : "3"
 	},
 	{
 		"name" : "Linux",
-		"level" : 4
+		"group" : "4"
 	},
 	{
 		"name" : "Bash",
-		"level" : 3
+		"group" : "4"
 	},
 	{
 		"name" : "Arch Linux",
-		"level" : 5
+		"group" : "4"
 	},
 	{
 		"name" : "Ubuntu",
-		"level" : 5
+		"group" : "4"
 	},
 	{
 		"name" : "Virtualbox",
-		"level" : 3
+		"group" : "4"
 	},
 	{
 		"name" : "VMware",
-		"level" : 2
-	},
-	{
-		"name" : "HTML",
-		"level" : 5
-	},
-	{
-		"name" : "CSS",
-		"level" : 4
+		"group" : "4"
 	},
 	{
 		"name" : "Vim",
-		"level" : 2
+		"group" : "4"
 	},
 	{
-		"name" : "Networking",
-		"level" : 4
+		"name" : "System administration",
+		"group" : "4"
+	},
+	{
+		"name" : "Git",
+		"group" : "4"
 	},
 	{
 		"name" : "Video editing",
-		"level" : 4
+		"group" : "5"
 	},
 	{
 		"name" : "Video recording",
-		"level" : 5
+		"group" : "5"
 	},
 	{
 		"name" : "Photography",
-		"level" : 4
+		"group" : "5"
 	},
 	{
-		"name" : "soldering",
-		"level" : 5
-	},
-	{
-		"name" : "wire laying",
-		"level" : 5
+		"name" : "Soldering",
+		"group" : "6"
 	},
 	{
 		"name" : "Hardware repairs",
-		"level" : 5
-	},
-	{
-		"name" : "Woodwork",
-		"level" : 2
-	},
-	{
-		"name" : "Manual labor",
-		"level" : 3
+		"group" : "6"
 	},
 	{
 		"name" : "Team work",
-		"level" : 4
+		"group" : "0"
 	},
 	{
 		"name" : "Team leading",
-		"level" : 3
-	},
-	{
-		"name" : "Communication",
-		"level" : 5
-	},
-	{
-		"name" : "Critical thinking",
-		"level" : 5
-	},
-	{
-		"name" : "Problem solving",
-		"level" : 4
+		"group" : "0"
 	},
 	{
 		"name" : "French",
-		"level" : 3
-	},
-	{
-		"name" : "Loyalty",
-		"level" : 4
-	},
-	{
-		"name" : "Discipline",
-		"level" : 3
-	},
-	{
-		"name" : "Consistency",
-		"level" : 4
-	},
-	{
-		"name" : "Honesty",
-		"level" : 5
+		"group" : "0"
 	}
 ]

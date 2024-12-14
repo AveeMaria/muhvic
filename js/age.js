@@ -1,6 +1,6 @@
 function calculateAge() {
 	const today = new Date();
-	const birth = new Date(2006, 11, 22);
+	const birth = new Date(2006, 11, 15);
 
 	let age = today.getFullYear() - birth.getFullYear();
 	const monthDifference = today.getMonth() - birth.getMonth();
