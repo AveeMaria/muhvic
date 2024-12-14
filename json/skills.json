@@ -1,114 +1,114 @@
 [
 	{
 		"name" : "C/C++",
-		"group" : "1"
+		"group" : 1
 	},
 	{
 		"name" : "Python",
-		"group" : "1"
+		"group" : 1
 	},
 	{
 		"name" : "SQL",
-		"group" : "1"
+		"group" : 1
 	},
 	{
 		"name" : "MySQL",
-		"group" : "1"
+		"group" : 1
 	},
 	{
 		"name" : "Firebird",
-		"group" : "1"
+		"group" : 1
 	},
 	{
 		"name" : "PHP",
-		"group" : "1"
+		"group" : 1
 	},
 	{
 		"name" : "JS",
-		"group" : "1"
+		"group" : 1
 	},
 	{
 		"name" : "HTML/CSS",
-		"group" : "1"
+		"group" : 1
 	},
 	{
 		"name" : "Siemens",
-		"group" : "2"
+		"group" : 2
 	},
 	{
 		"name" : "Arduino",
-		"group" : "2"
+		"group" : 2
 	},
 	{
 		"name" : "Tia Portal",
-		"group" : "2"
+		"group" : 2
 	},
 	{
 		"name" : "Soldering",
-		"group" : "2"
+		"group" : 2
 	},
 	{
 		"name" : "Hardware repairs",
-		"group" : "2"
+		"group" : 2
 	},
 	{
 		"name" : "Linux",
-		"group" : "3"
+		"group" : 3
 	},
 	{
 		"name" : "Bash",
-		"group" : "3"
+		"group" : 3
 	},
 	{
 		"name" : "Arch Linux",
-		"group" : "3"
+		"group" : 3
 	},
 	{
 		"name" : "Ubuntu",
-		"group" : "3"
+		"group" : 3
 	},
 	{
 		"name" : "Virtualbox",
-		"group" : "3"
+		"group" : 3
 	},
 	{
 		"name" : "VMware",
-		"group" : "3"
+		"group" : 3
 	},
 	{
 		"name" : "Vim",
-		"group" : "3"
+		"group" : 3
 	},
 	{
 		"name" : "System administration",
-		"group" : "3"
+		"group" : 3
 	},
 	{
 		"name" : "Git",
-		"group" : "3"
+		"group" : 3
 	},
 	{
 		"name" : "Video editing",
-		"group" : "4"
+		"group" : 4
 	},
 	{
 		"name" : "Video recording",
-		"group" : "4"
+		"group" : 4
 	},
 	{
 		"name" : "Photography",
-		"group" : "4"
+		"group" : 4
 	},
 	{
 		"name" : "Team work",
-		"group" : "0"
+		"group" : 0
 	},
 	{
 		"name" : "Team leading",
-		"group" : "0"
+		"group" : 0
 	},
 	{
 		"name" : "French",
-		"group" : "0"
+		"group" : 0
 	}
 ]
