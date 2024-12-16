@@ -3,7 +3,7 @@
 
 	padding: 5%;
 
-	border: dashed 2px var(--container-border-color);
+	border: dashed 0px var(--container-border-color);
 	border-radius: var(--container-radius);
 }
 
