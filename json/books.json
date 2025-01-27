@@ -7,8 +7,7 @@
     {
         "title" : "Holy Bible (Douey-Rheims American translation)",
         "author" : "God",
-        "have" : false
-    
+        "have" : true
     },
     {
         "title" : "Mortalium Animos",
@@ -42,6 +41,16 @@
     {
         "title" : "The Life of St. Benedict",
         "author" : "St. Gregory The Great",
+        "have" : true
+    },
+    {
+        "title" : "The Holy Rule",
+        "author" : "St. Benedict",
+        "have" : true
+    },
+    {
+        "title" : "What will hell be like?",
+        "author" : "St. Alphonsus Liguori",
         "have" : false
     },
     {
