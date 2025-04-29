@@ -193,12 +193,16 @@
     }
 
     #hero-img {
-      max-width: 80%;
+      max-width: 60%;
       border-radius: 1000px;
       position: fixed !important;
 
-      top: 27.5svh;
-      left: calc(50% - 40%);
+      top: 30svh;
+      left: calc(50% - 30%);
+    }
+    
+    #about-me p {
+      font-size: 1.25em;
     }
   }
 }

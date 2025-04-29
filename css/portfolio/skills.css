@@ -74,7 +74,7 @@
   }
   
   .skill-item {
-    width: 20%;
+    width: 25%;
     aspect-ratio: 1 / 1 !important;
     
     padding: 1em;
@@ -134,11 +134,12 @@
     display: flex;
     flex-direction: row;
     margin-bottom: 2svh;
+    justify-content: center
   }
 
   #left h1 {
     margin: 0 0.25em;
-    font-size: 2em;
+    font-size: 1.5em;
   }
   
   #right {
@@ -211,6 +212,17 @@
   @media (max-height: 720px) {
     .skill-item:last-child {
       display: block;
+    }
+
+    .skill-item {
+      aspect-ratio: 1 / 1 !important;
+      width: 30svw;
+      height: unset;
+    }
+
+    #left h1 {
+      margin: 0 0.25em;
+      font-size: 1.25em;
     }
   }
 

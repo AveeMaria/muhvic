@@ -72,7 +72,6 @@
   }
 }
 
-
 @media (max-width: 768px) {
   nav {
     all: unset;
@@ -98,6 +97,7 @@
   
   nav h1 {
     font-size: 2.5em !important;
+    margin: 0;
     transition: 0.3s;
   }
   
@@ -148,7 +148,6 @@
   }
 
   #nav-ul {
-    /*display: none;/*JS toggla*/
     display: flex;
     flex-direction: column;
     width: 70svw;
@@ -163,5 +162,11 @@
 
   #nav-ul li {
     margin: 0;
+  }
+
+  @media (max-height: 720px) {
+    .nav-link {
+      font-size: 1.25em;
+    }
   }
 }

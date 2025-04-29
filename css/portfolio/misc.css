@@ -7,10 +7,10 @@ html::-webkit-scrollbar {
 }
 
 * {
-  box-sizing: border-box;
+  box-sizing: border-box !important;
 }
 
 body {
-  overflow: hidden;
-  scroll-behavior: smooth;
+  overflow: hidden !important;
+  scroll-behavior: smooth !important;
 }

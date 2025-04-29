@@ -108,13 +108,13 @@
 
   #content h1 {
     font-size: var(--h1-size);
-    margin-bottom: 0.5em;
+    margin-bottom: 0;
     color: var(--accent-color);
   }
 
   #right {
     width: 100%;
-    height: 50%;
+    height: 45%;
     display: flex;
     flex-direction: row;
     align-items: center;
