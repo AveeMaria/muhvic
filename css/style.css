@@ -50,7 +50,7 @@ body {
 
 #hero-text-container h1 {
 	all: unset;
-	font-size: 3.5em;
+	font-size: 4.5em;
 	font-weight: bolder;
   color: var(--color3);
 }
@@ -66,7 +66,6 @@ body {
 
 #options {
 	width: 100svw;
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -103,7 +102,7 @@ body {
 }
 
 #personal-container, #corporate-container {
-	padding: 30px;
+	padding: 50px;
 	background-color: #333;
 	border-radius: 50px;
 	gap: 30px;
@@ -134,7 +133,6 @@ html::-webkit-scrollbar {
 	#hero-container {
 		margin-top: 20px;
 		width: 100svw;
-	
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-start;
@@ -156,4 +154,22 @@ html::-webkit-scrollbar {
 		max-width: 90svw;
 	}
 
+  #options-container h1 {
+    font-size: 2em;
+  }
+
+  #personal-container, #corporate-container {
+    padding: 10px 40px;
+    border-radius: 15px;
+    gap: 15px;
+    width: 80svw;
+  }
+
+  #hero-text-container h1 {
+    font-size: 3em;
+  }
+
+  #hero {
+    max-width: 70svw;
+}
 }
