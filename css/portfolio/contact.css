@@ -3,6 +3,7 @@
 @import url(nav.css);
 @import url(footer.css);
 @import url(animations.css);
+@import url(misc.css);
 
 @media (min-width: 768px) {
   body {

@@ -1,10 +1,10 @@
-/*@import url(misc.css);*/
 @import url(root.css);
 @import url(text.css);
 @import url(nav.css);
 @import url(footer.css);
 @import url(animations.css);
 @import url(img-zoom.css);
+@import url(misc.css);
 
 @media (min-width: 768px) {
   body {

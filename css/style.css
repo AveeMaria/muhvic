@@ -1,5 +1,14 @@
 @import url(root.css);
 
+* {
+  box-sizing: border-box;
+}
+
+body {
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
 body {
   all: unset;
   display: flex;
