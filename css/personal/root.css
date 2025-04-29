@@ -1,0 +1,59 @@
+:root {
+	--title-color: #e53d67;/*roza*/
+	--nav-color: #7385bc;/*tmno modra*/
+	--nav-link-color: #66c4c4;/*svtlo modra 66c4c4*/
+	
+	--container-border-color: #ffd700; /*yellow*/
+	--link-color: #e37933; /*orange*/
+	--link-color: #7385bc; /*#66c4c4svtlo modra*/
+
+
+	--nav-color: hsl(180,46%,36%);
+	--title-color: hsl(180,46%,36%);
+
+	--text-color: #CCC;/*#CCC*/
+	--text-color: #DBE9F4;
+	--bg-color: #30353f;/*#333*/
+
+
+/*
+NIKA KOLORS
+
+	--title-color: #66c4c4;	
+	--nav-color: #24282e;
+	--nav-link-color: #66c4c4;
+	
+	--container-border-color: #ffd700;
+	--link-color: #7385bc;
+
+	--text-color: #CCC;
+	--bg-color: #303236;
+*/
+
+/*
+	--primary-color: hsl(256, 44%, 35%);
+	--primary-color: hsl(256, 19%, 33%);
+	--navbar-color: hsl(230, 22%, 27%);
+
+
+	--primary-color: hsl(230deg 37.12% 64.35%);
+
+	--secondary-color: hsl(27, 100%, 37%);
+	--secondary-color: hsl(252, 73%, 70%);
+	--secondary-color: #16faae;
+*/
+
+	--container-radius: 20px;
+
+	--title-size: 36px;
+	--text-size: 24px;
+
+
+}
+
+@media (max-width: 800px) {
+    :root {
+    	--title-size: 30px;
+        --text-size: 20px;
+    }
+}

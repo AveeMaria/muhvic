@@ -1,0 +1,85 @@
+@import url(root.css);
+
+@media (min-width: 768px) {
+  p, a, span, h1, h2, h3 {
+    display: block;
+  }
+  
+  p, a, span {
+    all: unset;
+    margin: 0;
+    font-size: var(--text-size);
+    color: var(--text-color);
+  }
+  
+  li {
+    margin: 0;
+    font-size: var(--text-size);
+    color: var(--text-color);
+  }
+  
+  span {
+    all: unset;
+  }
+  
+  h1, h2, h3 {
+    color: var(--text-color);
+    margin: 0;
+  }
+  
+  a {
+    font-size: unset;
+    color: var(--accent-color);
+  }
+  
+  a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  p {
+    display: block;
+  }
+}
+
+@media (max-width: 768px) {
+  p, a, span, h1, h2, h3 {
+    display: block;
+  }
+  
+  p, a, span {
+    all: unset;
+    margin: 0;
+    font-size: var(--text-size);
+    color: var(--text-color);
+  }
+  
+  li {
+    margin: 0;
+    font-size: var(--text-size);
+    color: var(--text-color);
+  }
+  
+  span {
+    all: unset;
+  }
+  
+  h1, h2, h3 {
+    color: var(--text-color);
+    margin: 0;
+  }
+  
+  a {
+    font-size: unset;
+    color: var(--accent-color);
+  }
+  
+  a:hover {
+    cursor: pointer;
+    text-decoration: underline;
+  }
+  
+  p {
+    display: block;
+  }
+}

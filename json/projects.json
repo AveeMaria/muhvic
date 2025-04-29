@@ -1,0 +1,29 @@
+[
+{
+  "title" : "Vojna Kraljestev: online real-time multiplayer game written in C++",
+  "desc1" : "For my finals project I have written a 2D real-time online multiplayer tower defence game, inspired by <a href='https://en.wikipedia.org/wiki/Kingdom_Rush'>Kingdom Rush</a>, which I upgraded to allow 1v1 online duels.",
+  "desc2" : "I used SDL for graphics and SDL_Net to send UDP packets between my clients and server. Server also logs games to MariaDB and displays data on a PHP webpage.",
+  "conclusion" : "I learned memory management, general optimization and networking. <a href='/game/download.html'>Download here</a>.",
+  "main_img" : "vojna_kraljestev1.mp4",
+  "left_img" : "vojna_kraljestev2.png",
+  "right_img" : "vojna_kraljestev3.png"
+},
+{
+  "title" : "Purple chat: Real-time websocket chatroom app with Node.js server",
+  "desc1" : "Me and my friend <a href='https://oprin.si'>Martin Oprin</a> have written a chat application running on a Express server that allows real-time messaging.",
+  "desc2" : "Features: different chat rooms, unique usernames, color and font settings and message deletion.",
+  "conclusion" : "I learned JavaScript events, DOM manipulation and arrow functios.",
+  "main_img" : "purple_chat1.mp4",
+  "left_img" : "purple_chat2.png",
+  "right_img" : "purple_chat3.png"
+},
+{
+  "title" : "Website for Camp Muhvič",
+  "desc1" : "I have improved the website of family owned campsite, to improve turist awareness and help people find the hidden Slovenian gem.",
+  "desc2" : "I has a interactive price calculator, preloaders, navbar dropdown menu (on mobile) and basic animations",
+  "conclusion" : "I learned animations, CSS and mobile web design.",
+  "main_img" : "camp_muhvic1.mp4",
+  "left_img" : "camp_muhvic2.png",
+  "right_img" : "camp_muhvic3.png"
+}
+]

@@ -1,0 +1,22 @@
+.container {
+	margin: 5vh 0;
+
+	padding: 5%;
+
+	border: dashed 1px var(--container-border-color);
+	border-radius: var(--container-radius);
+}
+
+	.container:first-child {
+		margin-top: 0;
+	}
+
+	.container:last-child {	
+		margin-bottom: 0;
+	}
+
+	.container:nth-child(1n) {
+	}
+
+	.container:nth-child(2n) {
+	}

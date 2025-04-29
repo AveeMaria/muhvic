@@ -1,0 +1,23 @@
+@media (min-width: 768px) {
+  :root {
+    --h1-size: 3em;
+    --h2-size: 2em;
+    --text-size: 1.5em;
+  
+    --bg-color: #333;
+    --text-color: #f0ffff;
+    --accent-color: #7385bc;
+  }
+}
+
+@media (max-width: 768px) {
+  :root {
+    --h1-size: 2.5em;
+    --h2-size: 2em;
+    --text-size: 1.5em;
+  
+    --bg-color: #333;
+    --text-color: #f0ffff;
+    --accent-color: #7385bc;
+  }
+}

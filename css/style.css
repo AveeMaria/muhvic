@@ -1,0 +1,150 @@
+@import url(root.css);
+
+body {
+  all: unset;
+  display: flex;
+  margin: 0;
+  height: 100svh;
+  padding: 0;
+  overflow-x: hidden;
+  width: 100svw;
+  background-color: var(--color1);
+  flex-direction: column;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero-container {
+	width: 100svw;
+
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  align-content: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+	gap: 20px;
+
+	color: var(--color2);;
+  margin-bottom: 5%;
+}
+
+#hero-text-container {
+	display: flex;
+	flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+
+#hero-text-container h1 {
+	all: unset;
+	font-size: 4em;
+	font-weight: bolder;
+  color: var(--color3);
+}
+
+#hero-text-container span {
+	font-size: 2em;
+}
+
+#hero {
+	border-radius: 1000px;
+	width: 400px;
+}
+
+#options {
+	width: 100svw;
+
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-direction: row;
+	flex-wrap: nowrap;
+}
+
+#options-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-direction: row;
+	flex-wrap: nowrap;
+
+	cursor: pointer;
+	gap: 30px;
+}
+
+#options-container h1 {
+	margin: 0;
+	font-size: 3em;
+	font-weight: bold;
+}
+
+#options-container span {
+	font-size: 1.0em;
+}
+
+#personal-svg, #corporate-svg {
+	width: 50px;
+	height: 50px;
+}
+
+#personal-container, #corporate-container {
+	padding: 50px;
+	background-color: #333;
+	border-radius: 50px;
+	gap: 30px;
+  color: var(--color2);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	align-content: center;
+	flex-direction: row;
+	flex-wrap: nowrap;
+
+	transition: 0.5s;
+}
+
+#personal-container:hover, #corporate-container:hover {
+	scale: 1.05;
+}
+
+html {
+	scrollbar-width: none !important;
+}
+
+html::-webkit-scrollbar {
+	display: none !important;
+}
+
+@media (max-width: 768px) {
+	#hero-container {
+		margin-top: 20px;
+		width: 100svw;
+	
+		display: flex;
+		flex-direction: column;
+		justify-content: flex-start;
+	}
+
+	#hero-text-container {
+		display: flex;
+		align-items: center;
+		text-align: center;
+	}
+	
+	#hero {
+		max-width: 80svw;
+	}
+
+	#options-container {
+		display: flex;
+		flex-direction: column;
+		max-width: 90svw;
+	}
+
+}

@@ -1,0 +1,167 @@
+@import url(root.css);
+
+@media (min-width: 768px) {
+  nav {
+    all: unset;
+    width: 70svw;
+    height: 15svh;
+    margin: 0 15svw;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav h1 {
+    font-size: 2.5em;
+    transition: 0.3s;
+  }
+  
+  nav h1:hover {
+    color: var(--accent-color);
+  }
+  
+  nav a:hover {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .nav-link {
+    font-size: 1.5em;
+    margin: 0.1em;
+    color: var(--text-color);
+    background-color: #333;
+    padding: 0.25em;
+    border-radius: 15px;
+  
+    transition: 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: var(--accent-color);
+  }
+  
+  #contact {
+    color: var(--accent-color);
+    margin: 0.1em;
+    transition: 0.3s;
+  }
+  
+  #contact:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    margin: 0.1em;
+    padding: 0.25em;
+    border-radius: 15px;
+  }
+
+  #nav-menu {
+    display: none !important;
+  }
+}
+
+
+@media (max-width: 768px) {
+  nav {
+    all: unset;
+    width: 80svw;
+    height: 10svh;
+    margin: 0 10svw;
+  
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  nav ul {
+    flex-direction: row;
+    margin: 0;
+    padding: 0;
+  }
+  
+  nav ul {
+    list-style-type: none;
+  }
+  
+  nav h1 {
+    font-size: 2.5em !important;
+    transition: 0.3s;
+  }
+  
+  nav h1:hover {
+    color: var(--accent-color);
+  }
+  
+  nav a:hover {
+    cursor: pointer;
+    text-decoration: none;
+  }
+  
+  .nav-link {
+    display: block;
+    font-size: 1.5em;
+    margin: 5%;
+    color: var(--text-color);
+    background-color: #444;
+    padding: 0.25em;
+    border-radius: 15px;
+
+    text-align: center;
+    width: 80% !important;
+  
+    transition: 0.3s;
+  }
+  
+  .nav-link:hover {
+    color: var(--accent-color);
+  }
+  
+  #contact {
+    color: var(--accent-color);
+    transition: 0.3s;
+  }
+
+  #contact:hover {
+    background-color: var(--accent-color);
+    color: var(--text-color);
+    padding: 0.25em;
+    border-radius: 15px;
+  }
+  
+  #nav-menu {
+    display: block;
+    max-height: 5svh;
+    width: 5svh;
+  }
+
+  #nav-ul {
+    /*display: none;/*JS toggla*/
+    display: flex;
+    flex-direction: column;
+    width: 70svw;
+    height: 100svh;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: -70svw;
+    background-color: #333;
+    transition: left 0.3s ease-in-out;
+  }
+
+  #nav-ul li {
+    margin: 0;
+  }
+}

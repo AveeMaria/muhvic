@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VK - Download</title>
+    <style>
+body {
+    margin: 0;
+    padding: 0;
+    width: 100svw;
+    height: 100svh;
+    background-color: #8ca8c5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.contaner {
+    border: solid 1px;
+}
+
+h1 {
+    text-align: center;
+    font-size: 3em;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px solid black;
+    padding: 10px;
+	font-size: 2em;
+}
+
+th {
+  background-color: aquamarine;
+  padding: 14px;
+  font-size: 2.5em;
+}
+
+td {
+    text-align: center;
+    background-color: #fff;
+}
+
+@media (max-width: 768px) {
+  th:nth-child(2n), td:nth-child(2n) {
+    display: none;
+  }
+}
+</style>
+</head>
+<body>
+    <h1>Vojna Kraljestev Download Page</h1>
+    <table>
+        <tr>
+            <th>Client</th>
+            <th>Version</th>
+            <th>Server</th>
+            <th>Version</th>
+        </tr>
+        <tr>
+            <td>
+                <a href="gameclient.7z" download>client.7z</a>
+            </td>
+            <td>
+                <p>v1.0</p>
+            </td>
+            <td>
+                <a href="server.7z" download>server.7z</a>
+            </td>
+            <td>
+                <p>v1.0</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <a href="gameclient.zip" download>client.zip</a>
+            </td>
+            <td>
+                <p>v1.0</p>
+            </td>
+            <td>
+                <a href="server.zip" download>server.zip</a>
+            </td>
+            <td>
+                <p>v1.0</p>
+            </td>
+        </tr>
+    </table>
+    <p>Client: <a href="https://github.com/AveeMaria/gameclient">source code</a>. Server: <a href="https://github.com/AveeMaria/server">source code</a></p>
+</body>
+</html>

@@ -1,0 +1,170 @@
+@import url(root.css);
+@import url(text.css);
+@import url(nav.css);
+@import url(footer.css);
+@import url(animations.css);
+
+@media (min-width: 768px) {
+  body {
+    all: unset;
+    width: 100svw;
+    height: 100svh;
+    padding: 0;
+    margin: 0;
+    background-color: #222;
+  }
+
+  #content {
+    width: 70svw;
+    height: 80svh;
+    margin: 0 15svw;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #content h1 {
+    font-size: var(--h1-size);
+    margin-bottom: 0.5em;
+    color: var(--accent-color);
+  }
+
+  #socials {
+    margin-top: 1em;
+    margin-left: 3em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #socials div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+
+  #socials p {
+    margin-left: 1em;
+  }
+
+  #socials svg {
+    width: 3em;
+    height: 3em;
+    transition: 0.3s;
+  }
+
+  #socials svg:hover {
+    scale: 1.1;
+  }
+
+  a {
+    cursor: pointer;
+  }
+
+  #left {
+    width: 45%;
+  }
+
+  #right {
+    width: 50%;
+    height: 80svh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #right p {
+    padding: 1em;
+  }
+
+  #right img {
+    max-width: 100%;
+    max-height: 80%;
+    border-radius: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    all: unset;
+    width: 100svw;
+    height: 100svh;
+    padding: 0;
+    margin: 0;
+    background-color: #222;
+  }
+
+  #content {
+    width: 90svw;
+    height: 85svh;
+    margin: 0 5svw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #content h1 {
+    font-size: var(--h1-size);
+    margin-bottom: 0.5em;
+    color: var(--accent-color);
+  }
+
+  #right {
+    width: 100%;
+    height: 50%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+
+  #right p {
+    padding: 1em;
+  }
+
+  #right img {
+    max-width: 100%;
+    max-height: 80%;
+    border-radius: 15px;
+  }
+
+  #left {
+    width: 100%;
+    height: 30%;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #socials {
+    margin-top: 1em;
+    margin-left: 3em;
+    display: flex;
+    flex-direction: column;
+  }
+
+  #socials div {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: row;
+  }
+
+  #socials p {
+    margin-left: 1em;
+  }
+
+  #socials svg {
+    width: 3em;
+    height: 3em;
+    transition: 0.3s;
+  }
+
+  #socials svg:hover {
+    scale: 1.1;
+  }
+
+  a {
+    cursor: pointer;
+  }
+}

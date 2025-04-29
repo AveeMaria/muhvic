@@ -1,0 +1,237 @@
+/*@import url(misc.css);*/
+@import url(root.css);
+@import url(text.css);
+@import url(nav.css);
+@import url(footer.css);
+@import url(animations.css);
+
+@media (min-width: 768px) {
+  body {
+    all: unset;
+    width: 100svw;
+    height: 100svh;
+    padding: 0;
+    margin: 0;
+    background-color: #222;
+  }
+  
+  #content {
+    width: 70svw;
+    height: 80svh;
+    margin: 0 15svw;
+    display: flex;
+    flex-direction: row;
+    align-items: center
+  }
+  
+  #left {
+    width: 34%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #right {
+    width: 66%;
+  }
+  
+  h1 {
+    font-size: var(--h1-size);
+    margin-bottom: 0.5em;
+  }
+  
+  p {
+    font-size: var(--text-size);
+    margin-bottom: 1em;
+  }
+  
+  #education {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #education ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+    color: var(--text-color);
+  }
+  
+  #skills {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  #skill-list {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .skill-item {
+    width: 20%;
+    aspect-ratio: 1 / 1 !important;
+    
+    padding: 1em;
+    background-color: #333;
+  
+    transition: 0.3s ease-in-out;
+  }
+  
+  .skill-item:hover {
+    scale: 1.05;
+    background-color: #444;
+  }
+  
+  .skill-item:last-child {
+    display: none;
+  }
+  
+  .btn {
+    width: 5em;
+    padding: 0.5em;
+    border-radius: 15px;
+    text-align: left;
+    background-color: #333;
+    cursor: pointer;
+    margin: 0.2em auto;
+  
+    transition: 0.5s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: var(--accent-color);
+    scale: 1.05;
+  }
+}
+
+@media (max-width: 768px) {
+  body {
+    all: unset;
+    width: 100svw;
+    height: 100svh;
+    padding: 0;
+    margin: 0;
+    background-color: #222;
+  }
+  
+  #content {
+    width: 90svw;
+    height: 80svh;
+    margin: 0 5svw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  #left {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 2svh;
+  }
+
+  #left h1 {
+    margin: 0 0.25em;
+    font-size: 2em;
+  }
+  
+  #right {
+    width: 100%;
+  }
+  
+  h1 {
+    font-size: var(--h1-size);
+    margin-bottom: 0.5em;
+  }
+  
+  p {
+    font-size: var(--text-size);
+    margin-bottom: 0.5em;
+  }
+  
+  #education {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  #education ul {
+    display: flex;
+    flex-direction: column;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    padding-inline-start: 40px;
+    unicode-bidi: isolate;
+    color: var(--text-color);
+  }
+  
+  #skills {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  #skill-list {
+    width: 100%;
+    height: 100%;
+    height: 60svh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    justify-content: center;
+    align-content: flex-start
+  }
+  
+  .skill-item {
+    aspect-ratio: 1 / 1 !important;
+    height: 10svh;
+
+    padding: 1.25em;
+    background-color: #333;
+  
+    transition: 0.3s ease-in-out;
+  }
+  
+  .skill-item:hover {
+    scale: 1.05;
+    background-color: #444;
+  }
+  
+  .skill-item:last-child {
+    display: none;
+  }
+
+  @media (max-height: 720px) {
+    .skill-item:last-child {
+      display: block;
+    }
+  }
+
+  .btn {
+    width: 5em;
+    padding: 0.5em;
+    border-radius: 15px;
+    text-align: left;
+    background-color: #333;
+    cursor: pointer;
+    margin: 0.2em auto;
+  
+    transition: 0.5s ease-in-out;
+  }
+  
+  .btn:hover {
+    background-color: var(--accent-color);
+    scale: 1.05;
+  }
+
+  footer {
+    height: 0 !important;
+  }
+}

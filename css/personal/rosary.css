@@ -1,0 +1,80 @@
+@import url('root.css');
+@import url('text.css');
+@import url('nav.css');
+@import url('container.css');
+@import url('misc.css');
+
+html {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--bg-color);
+}
+
+main {
+	width: 80vw;
+	margin: 5vh auto;
+	margin-top: 0;
+}
+
+header {
+	position: absolute;
+}
+
+footer {
+	background-color: #222;
+	height: 5vh;
+
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	display: none;
+}
+
+	footer p {
+		align-content: center;
+	}
+
+.mystery {
+	width: 100%;
+	border: dashed 1px var(--container-border-color);
+	margin: 2em 0;
+}
+
+	.mystery th {
+		color: var(--link-color);
+		border: dashed 1px var(--container-border-color);
+	}
+	
+	.mystery td {
+		padding: calc(var(--text-size) / 2);
+	}
+
+
+#rosary-container {
+	height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+	#rosary {
+		max-width: 100%;
+		max-height: 90%;
+	}
+
+#title {
+	position: absolute;
+	top: 0;
+	left: 0;
+	padding: 0;
+	margin-top: 0;
+}

@@ -1,0 +1,27 @@
+#stack::after {
+  content: "C++";
+  animation: changeStack 8s infinite steps(1);
+}
+
+#stack {
+  color: #7385bc;
+  font-weight: bold;
+}
+
+@keyframes changeStack{
+  0% {
+    content: "C++";
+  }
+  25% {
+    content: "JavaScript";
+  }
+  50% {
+    content: "PHP";
+  }
+  75% {
+    content: "PLSQL";
+  }
+  100% {
+    content: "C++";
+  }
+}

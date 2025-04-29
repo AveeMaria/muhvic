@@ -1,0 +1,188 @@
+@import url('root.css');
+@import url('nav.css');
+@import url('container.css');
+@import url('text.css');
+@import url('misc.css');
+
+
+html {
+	margin: 0;
+	padding: 0;
+
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	background-color: var(--bg-color);
+}
+
+main {
+	width: 80vw;
+	margin: 5vh auto;
+}
+
+header {
+	position: absolute;
+}
+
+footer {
+	background-color: #222;
+	height: 5vh;
+
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	display: none;
+}
+
+	footer p {
+		align-content: center;
+	}
+
+
+
+#hero {
+	height: 100vh;
+	display: block;
+	text-align: center;
+	align-content: center;
+	justify-content: center;
+}
+
+/*TO JE TOK BLOATED rabm #gif
+#arrow {
+	background-color: red;
+	width: 50px;
+	aspect-ratio: 1 / 1;
+
+	background-color: var(--text-color);
+
+	margin: 0 auto;
+
+	position: absolute;
+	top: calc(90vh - 50px);
+	left: calc(50vw - 50px / 2);
+
+	animation: up-down 1.5s infinite;
+}
+
+	@keyframes up-down {
+		0%, 100% {
+			transform: translateY(0);
+		}
+		50% {
+			transform: translateY(50px);
+		}
+	}
+*/
+
+#quote-container {
+	text-align: left;
+	margin: 0 auto;
+
+	max-width: 50vw;
+}
+
+	#quote {
+		margin: 0;
+	}
+
+	#quote-by {
+		margin: 0;
+		float: right;
+	}
+
+
+#books-table {
+	width: 100%;
+	border: dashed 1px var(--container-border-color);
+}
+
+	#books-table th, #books-table td {
+		padding: calc(var(--text-size) / 2);
+	}
+
+	#books-table th {
+		border: dashed 1px var(--container-border-color);
+		color: var(--link-color);
+	}
+
+	#books-table td {
+		border-left: dashed 1px var(--container-border-color);
+		border-right: dashed 1px var(--container-border-color);
+		text-align: left;
+	}
+
+		#books-table td:nth-child(3) {
+			text-align: center;
+		}
+
+#books-table-replacement {
+	display: none;
+}
+
+@media (max-width: 800px) {
+	#books-table {
+		display: none;
+	}
+	#books-table-replacement {
+		display: block;
+	}
+}
+
+#skills-list {
+	list-style-type: none;
+    padding: var(--text-size);
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: center;
+    flex-direction: row;
+}
+
+	#skills-list li {
+		color: white;
+		font-weight: 1000;
+		padding: 6px;
+		margin: 4px;
+		border: solid 1px var(--link-color);
+		border-radius: 10px;
+	}
+
+	#skills-list li:hover {
+		scale: 1.05;
+	}
+		.g0 {
+			background-color: #98d8ea;
+		}
+
+		.g1 {
+			background-color: #b5e71c;
+		} 
+
+		.g2 {
+			background-color: #ffc80f;
+		}
+
+		.g3 {
+			background-color: #7192bf;
+		}
+
+		.g4 {
+			background-color: #cc8dcd;	
+		}
+
+@media (max-width: 800px) {
+	#skills-list {
+		padding: 0;
+	}
+
+	#skills-list li {
+		padding: 4px;
+		margin: 4px;
+		font-weight: 500;
+		font-size: calc(var(--text-size) / 1.2);
+	}
+}

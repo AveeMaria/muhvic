@@ -1,0 +1,61 @@
+[
+    {
+        "title" : "Summa Theologica",
+        "author" : "St. Thomas Aquinas",
+        "have" : false
+    },
+    {
+        "title" : "Holy Bible (Douey-Rheims American translation)",
+        "author" : "God",
+        "have" : true
+    },
+    {
+        "title" : "Mortalium Animos",
+        "author" : "Pope Pius XI",
+        "have" : true
+    },
+    {
+        "title" : "Preparation for death",
+        "author" : "St. Alphonsus Liguori",
+        "have" : true
+    },
+    {
+        "title" : "The sources of Catholic Dogma",
+        "author" : "Denzinger",
+        "have" : false
+    },    {
+        "title" : "The Glories of Mary",
+        "author" : "St. Alphonus Liguori",
+        "have" : false
+    },
+    {
+        "title" : "St. Anthony of the Desert",
+        "author" : "St. Athanasius",
+        "have" : true
+    },    
+    {
+        "title" : "The Secret of the Rosary",
+        "author" : "St. Louis de Montfort",
+        "have" : false
+    },
+    {
+        "title" : "The Life of St. Benedict",
+        "author" : "St. Gregory The Great",
+        "have" : true
+    },
+    {
+        "title" : "The Holy Rule",
+        "author" : "St. Benedict",
+        "have" : true
+    },
+    {
+        "title" : "What will hell be like?",
+        "author" : "St. Alphonsus Liguori",
+        "have" : true
+    },
+    {
+        "title" : "True Devotion to the Blessed Virgin Mary",
+        "author" : "St. Louis de Montfort",
+        "have" : false
+    }
+]

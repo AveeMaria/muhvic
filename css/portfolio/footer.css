@@ -1,0 +1,15 @@
+@media (min-width: 768px) {
+  footer {
+    height: 5svh;
+    width: 70svw;
+    margin: 0 15svw;
+  }
+}
+
+@media (max-width: 768px) {
+  footer {
+    height: 5svh;
+    width: 70svw;
+    margin: 0 15svw;
+  }
+}
