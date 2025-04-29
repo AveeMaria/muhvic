@@ -16,17 +16,17 @@ body {
 }
 
 #hero-container {
-	width: 100svw;
+  width: 100svw;
 
-	display: flex;
+  display: flex;
   align-items: center;
   justify-content: center;
   align-content: center;
   flex-wrap: nowrap;
   flex-direction: row;
-	gap: 20px;
+  gap: 10px;
 
-	color: var(--color2);;
+  color: var(--color2);
   margin-bottom: 5%;
 }
 
@@ -41,7 +41,7 @@ body {
 
 #hero-text-container h1 {
 	all: unset;
-	font-size: 4em;
+	font-size: 3.5em;
 	font-weight: bolder;
   color: var(--color3);
 }
@@ -75,7 +75,7 @@ body {
 	flex-wrap: nowrap;
 
 	cursor: pointer;
-	gap: 30px;
+	gap: 10px;
 }
 
 #options-container h1 {
@@ -94,11 +94,11 @@ body {
 }
 
 #personal-container, #corporate-container {
-	padding: 50px;
+	padding: 30px;
 	background-color: #333;
 	border-radius: 50px;
 	gap: 30px;
-  color: var(--color2);
+    color: var(--color2);
 	display: flex;
 	justify-content: center;
 	align-items: center;
